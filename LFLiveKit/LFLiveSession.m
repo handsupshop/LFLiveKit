@@ -425,4 +425,11 @@
     }
 }
 
+- (NSInteger) currentVideoBitrate {
+        return [self.videoEncoder videoBitRate];
+}
+
+- (NSInteger) currentAudioBitrate {
+        return self.audioConfiguration.audioBitrate;
+}
 @end
