@@ -425,6 +425,8 @@
     }
 }
 
+#pragma mark -- Custom Method
+
 - (NSInteger) currentVideoBitrate {
         return [self.videoEncoder videoBitRate];
 }
@@ -432,4 +434,9 @@
 - (NSInteger) currentAudioBitrate {
         return self.audioConfiguration.audioBitrate;
 }
+
+- (void)reloadWarterMarkView {
+    [self.videoCaptureSource reloadWarterMarkView];
+}
+
 @end

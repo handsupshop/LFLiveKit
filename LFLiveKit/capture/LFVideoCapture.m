@@ -347,6 +347,10 @@
     }
 }
 
+- (void)reloadWarterMarkView {
+    [self.uiElementInput update];
+}
+
 #pragma mark Notification
 
 - (void)willEnterBackground:(NSNotification *)notification {

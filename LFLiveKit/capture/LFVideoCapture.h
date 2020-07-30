@@ -81,4 +81,8 @@
  */
 - (nullable instancetype)initWithVideoConfiguration:(nullable LFLiveVideoConfiguration *)configuration NS_DESIGNATED_INITIALIZER;
 
+#pragma mark -- Custom Method
+
+- (void)reloadWarterMarkView;
+
 @end
